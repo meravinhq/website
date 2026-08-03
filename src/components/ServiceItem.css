@@ -1,0 +1,45 @@
+.service-item {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  padding-top: 32px;
+
+  border-top: 1px solid #ececec;
+}
+
+.service-item__title {
+  margin: 0;
+
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.03em;
+
+  color: #111;
+}
+
+.service-item__description {
+  margin: 0;
+
+  max-width: 420px;
+
+  font-size: 1.05rem;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  color: #555;
+}
+
+@media (max-width: 640px) {
+  .service-item {
+    padding-top: 28px;
+  }
+}

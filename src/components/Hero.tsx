@@ -2,34 +2,42 @@ import './Hero.css'
 
 export function Hero() {
   return (
-    <section className="hero" aria-labelledby="hero-title">
+    <section
+      className="hero"
+      aria-labelledby="hero-title"
+    >
       <div className="hero__inner">
-        <a href="/" className="hero__brand" aria-label="MERAVIN home">
-          MERAVIN
-        </a>
+        <p className="hero__brand">
+          <span className="hero__brand-text">
+            MERAVIN
+          </span>
+        </p>
 
-        <h1 id="hero-title" className="hero__headline">
+        <h1
+          id="hero-title"
+          className="hero__headline"
+        >
           Engineering reliable digital products for business.
         </h1>
 
         <p className="hero__subheadline">
-          Custom web applications, automation, and business systems engineered
+          Custom web applications, automation and business systems engineered
           for long-term value.
         </p>
 
         <div className="hero__actions">
           <a
-            className="hero__button hero__button--primary"
             href="#contact"
+            className="hero__button hero__button--primary"
           >
-            Start a project
+            Start Project
           </a>
 
           <a
-            className="hero__button hero__button--secondary"
             href="#services"
+            className="hero__button hero__button--secondary"
           >
-            Explore services
+            Explore Services
           </a>
         </div>
       </div>

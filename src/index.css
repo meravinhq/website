@@ -1,9 +1,12 @@
 :root {
   --color-surface: #ffffff;
   --color-ink: #111111;
-  --color-ink-soft: #2a2a2a;
-  --color-muted: #5c5c5c;
-  --color-border: #d6d6d6;
+  --color-muted: #555555;
+  --color-border: #ececec;
+  --color-border-strong: #e6e6e6;
+  --layout-max: 1200px;
+  --layout-gutter: 32px;
+  --section-space: 120px;
 
   color: var(--color-ink);
   background-color: var(--color-surface);
@@ -20,13 +23,56 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100svh;
-  background-color: var(--color-surface);
+  background: var(--color-surface);
+  color: var(--color-ink);
 }
 
 #root {
   min-height: 100svh;
+}
+
+.section-label {
+  margin: 0 0 20px;
+
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: var(--color-muted);
+}
+
+.section-title {
+  margin: 0 0 20px;
+
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+
+  color: var(--color-ink);
+}
+
+.section-lead {
+  margin: 0;
+
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.65;
+
+  color: var(--color-muted);
 }

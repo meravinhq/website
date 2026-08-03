@@ -1,0 +1,47 @@
+.process-step {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+
+  gap: 20px;
+
+  max-width: 480px;
+}
+
+.process-step__number {
+  padding-top: 4px;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.04em;
+
+  line-height: 1.5;
+
+  color: #555;
+}
+
+.process-step__title {
+  margin: 0 0 12px;
+
+  font-size: 1.35rem;
+
+  font-weight: 600;
+
+  letter-spacing: -0.03em;
+
+  color: #111;
+}
+
+.process-step__description {
+  margin: 0;
+
+  font-size: 1.05rem;
+
+  font-weight: 400;
+
+  line-height: 1.65;
+
+  color: #555;
+}
