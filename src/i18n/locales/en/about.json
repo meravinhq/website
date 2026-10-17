@@ -1,1 +1,19 @@
-{}
+{
+  "label": "About",
+  "title": "Engineering that starts from the problem.",
+  "lead": "MERAVIN is a software engineering company. We develop digital products and business software: websites, web applications, CRM systems, Telegram bots, APIs and automation.",
+  "principles": [
+    {
+      "title": "Start with the business task",
+      "description": "Work begins with the problem to solve — not with a preset template or a fixed technology stack."
+    },
+    {
+      "title": "Architecture to fit the project",
+      "description": "Technical choices follow the requirements of that project: what needs to be built, who will use it, and how it should be maintained."
+    },
+    {
+      "title": "Checked before launch",
+      "description": "Quality is verified before release. Support after launch is agreed separately for each project."
+    }
+  ]
+}

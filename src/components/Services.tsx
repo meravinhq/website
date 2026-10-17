@@ -1,64 +1,37 @@
-import { ServiceItem } from './ServiceItem'
-import type { ServiceItemProps } from './ServiceItem'
-import './Services.css'
+import { useTranslation } from "react-i18next";
 
-type Service = ServiceItemProps
+import { ServiceItem } from "./ServiceItem";
+import "./Services.css";
 
-const services: Service[] = [
-  {
-    title: 'Web applications',
-    description:
-      'Custom platforms engineered for performance, clarity, and long-term maintainability.',
-  },
-  {
-    title: 'Business systems',
-    description:
-      'Internal tools that streamline operations, reduce friction, and support daily work.',
-  },
-  {
-    title: 'Automation',
-    description:
-      'Reliable process automation that connects data, systems, and teams with precision.',
-  },
-  {
-    title: 'Digital products',
-    description:
-      'Product engineering focused on stability, usability, and sustainable business growth.',
-  },
-]
+type ServiceCopy = {
+  title: string;
+  description: string;
+};
 
 export function Services() {
+  const { t } = useTranslation();
+  const services = t("services.items", { returnObjects: true }) as ServiceCopy[];
+
   return (
-    <section
-      className="services"
-      id="services"
-      aria-labelledby="services-title"
-    >
+    <section className="services" id="services" aria-labelledby="services-title">
       <div className="services__inner">
         <header className="services__intro">
-          <p className="section-label">
-            Services
-          </p>
+          <p className="section-label">{t("services.label")}</p>
 
-          <h2
-            id="services-title"
-            className="section-title"
-          >
-            Capabilities built for lasting business value.
+          <h2 id="services-title" className="section-title">
+            {t("services.title")}
           </h2>
 
-          <p className="section-lead">
-            MERAVIN designs and engineers digital systems with a focus on
-            reliability, maintainability, and practical outcomes.
-          </p>
+          <p className="section-lead">{t("services.lead")}</p>
+
+          <a href="#contact" className="services__cta">
+            {t("services.cta")}
+          </a>
         </header>
 
         <ul className="services__grid">
           {services.map((service) => (
-            <li
-              key={service.title}
-              className="services__item"
-            >
+            <li key={service.title} className="services__item">
               <ServiceItem
                 title={service.title}
                 description={service.description}
@@ -68,5 +41,5 @@ export function Services() {
         </ul>
       </div>
     </section>
-  )
+  );
 }

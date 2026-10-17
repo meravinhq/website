@@ -1,65 +1,41 @@
-import './Footer.css'
+import { useTranslation } from "react-i18next";
 
-type FooterLink = {
-  href: string
-  label: string
-}
+import type { AppLanguage } from "../config";
+import { EMAIL } from "../config";
+import "./Footer.css";
 
-const footerLinks: FooterLink[] = [
-  {
-    href: '#services',
-    label: 'Services',
-  },
-  {
-    href: '#process',
-    label: 'Process',
-  },
-  {
-    href: '#cases',
-    label: 'Cases',
-  },
-  {
-    href: '#about',
-    label: 'About',
-  },
-  {
-    href: '#contact',
-    label: 'Contact',
-  },
-]
+const navKeys = [
+  { href: "#services", key: "nav.services" },
+  { href: "#process", key: "nav.process" },
+  { href: "#cases", key: "nav.cases" },
+  { href: "#about", key: "nav.about" },
+  { href: "#contact", key: "nav.contact" },
+] as const;
 
 export function Footer() {
-  const year = new Date().getFullYear()
+  const { i18n, t } = useTranslation();
+  const year = new Date().getFullYear();
+  const language: AppLanguage = i18n.resolvedLanguage === "en" ? "en" : "ru";
+  const homeHref = language === "en" ? "/en" : "/";
 
   return (
     <footer className="site-footer">
       <div className="site-footer__inner">
         <div className="site-footer__top">
           <a
-            href="/"
+            href={homeHref}
             className="site-footer__brand"
-            aria-label="MERAVIN Home"
+            aria-label={t("nav.home")}
           >
-            <span className="site-footer__brand-text">
-              MERAVIN
-            </span>
+            <span className="site-footer__brand-text">MERAVIN</span>
           </a>
 
-          <nav
-            className="site-footer__nav"
-            aria-label="Footer navigation"
-          >
+          <nav className="site-footer__nav" aria-label={t("nav.footer")}>
             <ul className="site-footer__list">
-              {footerLinks.map((item) => (
-                <li
-                  key={item.href}
-                  className="site-footer__item"
-                >
-                  <a
-                    href={item.href}
-                    className="site-footer__link"
-                  >
-                    {item.label}
+              {navKeys.map((item) => (
+                <li key={item.href} className="site-footer__item">
+                  <a href={item.href} className="site-footer__link">
+                    {t(item.key)}
                   </a>
                 </li>
               ))}
@@ -68,15 +44,17 @@ export function Footer() {
         </div>
 
         <div className="site-footer__bottom">
-          <p className="site-footer__tagline">
-            Reliable software engineering for business.
-          </p>
+          <div className="site-footer__meta">
+            <p className="site-footer__tagline">{t("footer.tagline")}</p>
 
-          <p className="site-footer__copy">
-            © {year} MERAVIN. All rights reserved.
-          </p>
+            <a className="site-footer__email" href={`mailto:${EMAIL}`}>
+              {EMAIL}
+            </a>
+          </div>
+
+          <p className="site-footer__copy">{t("footer.copy", { year })}</p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

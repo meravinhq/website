@@ -1,3 +1,8 @@
+export interface ProjectImage {
+  src: string;
+  alt: string;
+}
+
 export interface Project {
   id: number;
 
@@ -14,6 +19,8 @@ export interface Project {
   technologies: string[];
 
   cover: string;
+
+  images: ProjectImage[];
 
   website?: string;
 

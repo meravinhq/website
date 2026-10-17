@@ -28,6 +28,25 @@
   max-width: 340px;
 }
 
+.services__cta {
+  display: inline-flex;
+  margin-top: 28px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-ink);
+}
+
+.services__cta:hover {
+  opacity: 0.7;
+}
+
+.services__cta:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
 .services__grid {
   display: grid;
 

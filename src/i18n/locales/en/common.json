@@ -1,1 +1,38 @@
-{}
+{
+  "meta": {
+    "title": "MERAVIN — Software Engineering for Business",
+    "description": "MERAVIN develops commercial websites, web applications, CRM systems, Telegram bots, APIs and process automation for companies that need reliable, maintainable software."
+  },
+  "nav": {
+    "home": "MERAVIN Home",
+    "primary": "Primary navigation",
+    "footer": "Footer navigation",
+    "mobile": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "services": "Services",
+    "process": "Process",
+    "cases": "Cases",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "cta": {
+    "discuss": "Discuss your project",
+    "work": "View selected work"
+  },
+  "language": {
+    "label": "Language",
+    "ru": "Russian",
+    "en": "English"
+  },
+  "gallery": {
+    "open": "Open {{alt}} in full view",
+    "previous": "Previous image",
+    "next": "Next image",
+    "show": "Show image {{current}} of {{total}}",
+    "showAlt": "Show {{alt}}",
+    "close": "Close full view",
+    "dialog": "{{title}}, image {{counter}}",
+    "list": "{{title}} gallery"
+  }
+}

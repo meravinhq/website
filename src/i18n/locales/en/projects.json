@@ -1,1 +1,76 @@
-{}
+{
+  "label": "Selected work",
+  "title": "Products engineered for real business.",
+  "lead": "Digital products, business platforms and automation systems built for specific operational tasks.",
+  "visit": "Visit website",
+  "items": {
+    "asmotors": {
+      "category": "Automotive website",
+      "description": "A website for an automotive service with a presentation of services, information pages and online booking.",
+      "alts": [
+        "ASMotors homepage with hero, services and booking entry",
+        "ASMotors about section with company story and advantages",
+        "ASMotors warranty information and service guarantees",
+        "ASMotors service packages with prices and included work",
+        "ASMotors catalogue of automotive services",
+        "ASMotors client reviews and ratings",
+        "ASMotors workshop photo gallery",
+        "ASMotors contacts, map and request form"
+      ]
+    },
+    "asmotors-crm": {
+      "category": "Business management platform",
+      "description": "A workshop management system for requests, client records and service history, calendar and technician load, finances, documents, analytics, and notifications via WhatsApp, SMS and Telegram.",
+      "alts": [
+        "ASMotors CRM requests board with statuses and filters",
+        "ASMotors CRM analytics dashboard with revenue and charts",
+        "ASMotors CRM debtors list and outstanding balances",
+        "ASMotors CRM service calculator and pricing form",
+        "ASMotors CRM technician schedule calendar",
+        "ASMotors CRM client directory and profiles",
+        "ASMotors CRM technicians list and workload"
+      ]
+    },
+    "finoscop": {
+      "category": "Financial offers platform",
+      "description": "A platform for financial offers with option matching, comparison of terms and referral to partners.",
+      "alts": [
+        "FINOSCOP homepage with product categories and search",
+        "FINOSCOP four-step selection process",
+        "FINOSCOP matched financial offers and partner cards",
+        "FINOSCOP market overview of financial products",
+        "FINOSCOP loan calculator with amount and term controls",
+        "FINOSCOP about section explaining the platform",
+        "FINOSCOP journal and articles",
+        "FINOSCOP frequently asked questions",
+        "FINOSCOP footer with navigation and legal links"
+      ]
+    },
+    "zeleny-shinomontazh": {
+      "category": "Business website",
+      "description": "A commercial website for a tire service in Saratov, with services and a price list, cost calculation by selected parameters, company and warranty information, contacts and booking.",
+      "alts": [
+        "Zeleny Shinomontazh homepage with services and booking",
+        "Zeleny Shinomontazh about the workshop and warranty",
+        "Zeleny Shinomontazh list of tire services",
+        "Zeleny Shinomontazh price list",
+        "Zeleny Shinomontazh cost calculator by tire parameters",
+        "Zeleny Shinomontazh client reviews",
+        "Zeleny Shinomontazh workshop photo gallery",
+        "Zeleny Shinomontazh contacts, map and booking form"
+      ]
+    },
+    "lume-beauty-studio": {
+      "category": "Booking application",
+      "description": "A booking web application for a beauty studio, with a service catalogue and prices, technician profiles, reviews, an online booking interface, and a layout adapted for mobile devices.",
+      "alts": [
+        "LUMÉ Beauty Studio home screen with featured services",
+        "LUMÉ Beauty Studio service catalogue and prices",
+        "LUMÉ Beauty Studio technician profiles",
+        "LUMÉ Beauty Studio online booking interface",
+        "LUMÉ Beauty Studio about and reviews screen",
+        "LUMÉ Beauty Studio contacts and studio details"
+      ]
+    }
+  }
+}

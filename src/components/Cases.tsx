@@ -1,77 +1,40 @@
-import { CaseItem } from './CaseItem'
-import type { CaseItemProps } from './CaseItem'
-import './Cases.css'
+import { useTranslation } from "react-i18next";
 
-type CaseStudy = CaseItemProps
-
-const cases: CaseStudy[] = [
-  {
-    category: 'Operations',
-    title: 'Internal workflow platform',
-    description:
-      'A custom system that replaced fragmented tools and reduced manual processing across teams.',
-  },
-  {
-    category: 'Product',
-    title: 'Customer-facing web application',
-    description:
-      'A reliable product experience engineered for clarity, performance, and long-term iteration.',
-  },
-  {
-    category: 'Automation',
-    title: 'Process automation layer',
-    description:
-      'Connected systems and repeatable workflows that cut operational overhead without sacrificing control.',
-  },
-  {
-    category: 'Infrastructure',
-    title: 'Business systems modernization',
-    description:
-      'A maintainable foundation that improved stability and made future development more predictable.',
-  },
-]
+import CaseItem from "./CaseItem";
+import { projects } from "../data/projects";
+import "./Cases.css";
 
 export function Cases() {
+  const { t } = useTranslation();
+
   return (
-    <section
-      className="cases"
-      id="cases"
-      aria-labelledby="cases-title"
-    >
+    <section className="cases" id="cases" aria-labelledby="cases-title">
       <div className="cases__inner">
         <header className="cases__intro">
-          <p className="section-label">
-            Cases
-          </p>
+          <p className="section-label">{t("projects.label")}</p>
 
-          <h2
-            id="cases-title"
-            className="section-title"
-          >
-            Selected work shaped by business outcomes.
+          <h2 id="cases-title" className="section-title">
+            {t("projects.title")}
           </h2>
 
-          <p className="section-lead">
-            Representative engagements focused on reliability, practical
-            delivery, and systems that remain valuable over time.
-          </p>
+          <p className="section-lead">{t("projects.lead")}</p>
         </header>
 
-        <ul className="cases__grid">
-          {cases.map((item) => (
+        <ul className="cases__list">
+          {projects.map((project) => (
             <li
-              key={item.title}
-              className="cases__item"
+              key={project.id}
+              className={
+                project.featured
+                  ? "cases__item cases__item--featured"
+                  : "cases__item"
+              }
             >
-              <CaseItem
-                category={item.category}
-                title={item.title}
-                description={item.description}
-              />
+              <CaseItem project={project} />
             </li>
           ))}
         </ul>
       </div>
     </section>
-  )
+  );
 }

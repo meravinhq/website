@@ -1,1 +1,27 @@
-{}
+{
+  "label": "Process",
+  "title": "From the business task to a working system.",
+  "lead": "A clear sequence: understand the problem, plan the solution, build it, then launch with agreed support.",
+  "steps": [
+    {
+      "number": "01",
+      "title": "Discovery",
+      "description": "We clarify the problem, requirements, constraints and expected result before technical decisions are made."
+    },
+    {
+      "number": "02",
+      "title": "Planning & Design",
+      "description": "We define structure, usage scenarios and a technical approach for the agreed scope of the project."
+    },
+    {
+      "number": "03",
+      "title": "Engineering",
+      "description": "We build the product and check that it matches the agreed requirements before release."
+    },
+    {
+      "number": "04",
+      "title": "Launch & Support",
+      "description": "We prepare the product for launch and agree further support separately for the project."
+    }
+  ]
+}

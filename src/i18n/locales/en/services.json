@@ -1,1 +1,24 @@
-{}
+{
+  "label": "Services",
+  "title": "Software for the systems your business runs on.",
+  "lead": "MERAVIN engineers digital products and business software — from customer-facing interfaces to internal tools, bots and integrations.",
+  "cta": "Discuss a service",
+  "items": [
+    {
+      "title": "Websites & Web Applications",
+      "description": "Commercial websites, web applications and customer-facing interfaces built around a defined business task. You receive a working product scoped to the agreed requirements."
+    },
+    {
+      "title": "CRM & Business Systems",
+      "description": "CRM systems, admin panels and internal tools for day-to-day operations. We implement the workflows the project needs, not a generic package."
+    },
+    {
+      "title": "Telegram Bots",
+      "description": "Telegram bots for customer communication and operational automation. Features follow the requirements agreed for the project."
+    },
+    {
+      "title": "APIs, Integrations & Automation",
+      "description": "APIs and integrations that exchange data between systems, plus automation of repetitive processes where the project needs it."
+    }
+  ]
+}

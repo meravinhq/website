@@ -1,0 +1,17 @@
+{
+  "label": "Contact",
+  "title": "Describe the task. We will discuss the solution.",
+  "lead": "Write what you need to build or automate. We will review the requirements and outline a suitable technical approach.",
+  "note": "In the first message, include the task, current constraints and any relevant links or examples.",
+  "telegram": {
+    "title": "Contact us on Telegram",
+    "description": "Let's discuss your requirements and possible implementation.",
+    "cta": "Message us on Telegram",
+    "external": "Opens in a new tab"
+  },
+  "email": {
+    "title": "Email us",
+    "description": "If Telegram is not convenient, write to hello@meravin.com.",
+    "cta": "Email us"
+  }
+}
